@@ -952,7 +952,7 @@ body{
 
 <div id="audioPill" onclick="toggleMute()">🎵 TAP TO MUTE</div>
 <audio id="barbieAudio" src="barbie.mp3" loop></audio>
-<audio id="maskoffAudio" src="maskoff.mp3" loop></audio>
+<audio id="maskoffAudio" src="mask off.mp3" loop></audio>
 
 <script>
 // ══ FLOATERS ══
@@ -1350,7 +1350,7 @@ function triggerArrival(){
 let muted=false;
 function toggleMute(){
   muted=!muted;
-  ['barbieAudio','maskoffAudio'].forEach(id=>document.getElementById(id).muted=muted);
+  ['barbieAudio','mask offAudio'].forEach(id=>document.getElementById(id).muted=muted);
   document.getElementById('audioPill').textContent=muted?'🔇 TAP TO UNMUTE':'🎵 TAP TO MUTE';
 }
 document.body.addEventListener('click',()=>{
